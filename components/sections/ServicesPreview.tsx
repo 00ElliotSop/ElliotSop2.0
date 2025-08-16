@@ -6,40 +6,40 @@ const services = [
   {
     id: 'web-apps',
     icon: Globe,
-    title: 'Web Applications',
-    description: 'Modern, responsive web apps built with React, Next.js, and cutting-edge technologies for optimal performance.',
-    features: ['React/Next.js', 'Real-time Features', 'Progressive Web Apps', 'E-commerce Integration'],
-    accent: 'text-[#66E3FF] border-[#66E3FF]'
+    title: 'Secure Web Applications',
+    description: 'Modern, secure web applications built with React, Next.js, and enterprise-grade security practices.',
+    features: ['Security-First Design', 'Real-time Features', 'Progressive Web Apps', 'Secure Authentication'],
+    accent: 'text-[#00B3A4] border-[#00B3A4]'
   },
   {
     id: 'mobile-apps', 
     icon: Users,
-    title: 'Mobile Applications',
-    description: 'Cross-platform mobile apps using React Native and native technologies for iOS and Android.',
-    features: ['React Native', 'Native Performance', 'App Store Deployment', 'Push Notifications'],
-    accent: 'text-[#22C55E] border-[#22C55E]'
+    title: 'Secure Mobile Apps',
+    description: 'Cross-platform mobile applications with built-in security controls and data protection.',
+    features: ['Secure Data Storage', 'Biometric Authentication', 'App Store Deployment', 'Encrypted Communications'],
+    accent: 'text-[#10B981] border-[#10B981]'
   },
   {
     id: 'backend-apis',
     icon: Server,
-    title: 'Backend & APIs',
-    description: 'Scalable backend services and APIs with robust security, monitoring, and automated deployment.',
-    features: ['REST/GraphQL APIs', 'Database Design', 'Cloud Deployment', 'Security & Auth'],
-    accent: 'text-[#A78BFA] border-[#A78BFA]'
+    title: 'Secure Backend & APIs',
+    description: 'Hardened backend services and APIs with comprehensive security controls and monitoring.',
+    features: ['Secure API Design', 'Threat Detection', 'Cloud Security', 'Zero-Trust Architecture'],
+    accent: 'text-[#7C3AED] border-[#7C3AED]'
   },
 ];
 
 export function ServicesPreview() {
   return (
-    <section className="section bg-[#101826]/50">
+    <section className="section bg-[#E6FFFA]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Development <span className="text-gradient">Services</span>
+            Security <span className="text-gradient">Services</span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            From concept to deployment, I build modern applications that are fast, secure, and scalable. 
-            Specializing in web apps, mobile apps, and robust backend systems.
+          <p className="text-xl text-[#475569] max-w-3xl mx-auto">
+            From concept to deployment, we build modern applications that are fast, secure, and scalable. 
+            Specializing in security-first development and comprehensive threat protection.
           </p>
         </div>
 

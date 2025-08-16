@@ -1,22 +1,23 @@
-# ElliotSop - Full-Stack Web & Mobile App Developer
+# Aqua Mint Security - Secure Web & Mobile App Development
 
-Expert full-stack developer specializing in secure web applications and mobile apps. I build fast, scalable solutions with security built-in from day one.
+Expert security-focused development team specializing in secure web applications and mobile apps. We build fast, scalable solutions with enterprise-grade security built-in from day one.
 
 ## Features
 
-- **Web Applications**: Modern React/Next.js applications with real-time features
-- **Mobile Applications**: Cross-platform React Native and native mobile apps
-- **Backend & APIs**: Scalable backend services with robust security
-- **Security First**: All applications built with enterprise-grade security practices
+- **Secure Web Applications**: Modern React/Next.js applications with security-first design
+- **Secure Mobile Applications**: Cross-platform React Native apps with built-in security controls
+- **Secure Backend & APIs**: Hardened backend services with comprehensive security monitoring
+- **Penetration Testing**: Comprehensive security assessments and vulnerability testing
+- **Security Consulting**: Expert guidance on secure development practices
 
 ## Tech Stack
 
-- **Frontend**: React, Next.js, TypeScript, Tailwind CSS
-- **Mobile**: React Native, Native iOS/Android
-- **Backend**: Node.js, Express, Fastify, NestJS
+- **Frontend**: React, Next.js, TypeScript, Tailwind CSS (Security-hardened)
+- **Mobile**: React Native, Native iOS/Android (Secure by design)
+- **Backend**: Node.js, Express, Fastify, NestJS (Zero-trust architecture)
 - **Database**: PostgreSQL, MongoDB, Redis
 - **Cloud**: AWS, Vercel, Docker
-- **Security**: OAuth2, JWT, Rate Limiting, OWASP Best Practices
+- **Security**: OAuth2, JWT, Rate Limiting, OWASP Best Practices, Penetration Testing, Threat Modeling
 
 ## Getting Started
 
@@ -66,37 +67,44 @@ This configuration enables:
 
 ## Services
 
-### Web Development
-- Modern, responsive web applications
-- Real-time features and progressive web apps
-- E-commerce integration and payment processing
-- Performance optimization and SEO
+### Secure Web Development
+- Security-first web applications
+- Real-time features with secure communications
+- E-commerce with PCI DSS compliance
+- Performance optimization with security controls
 
-### Mobile Development
-- Cross-platform React Native applications
-- Native iOS and Android development
-- App Store deployment and optimization
-- Push notifications and offline capabilities
+### Secure Mobile Development
+- Cross-platform React Native applications with security controls
+- Native iOS and Android development with data protection
+- Secure app store deployment and code obfuscation
+- Encrypted push notifications and secure offline storage
 
-### Backend Development
-- RESTful and GraphQL APIs
-- Microservices architecture
-- Database design and optimization
-- Cloud deployment and DevOps
+### Secure Backend Development
+- Hardened RESTful and GraphQL APIs
+- Zero-trust microservices architecture
+- Secure database design with encryption
+- Cloud security and DevSecOps
 
+### Penetration Testing
+- Web application security testing
+- Mobile application security assessment
+- API security testing
+- Network penetration testing
+- Social engineering assessments
 ## Contact
 
-- **Email**: hello@elliotsop.com
-- **Website**: [elliotsop.com](https://elliotsop.com)
+- **Email**: hello@aquamintsecurity.com
+- **Website**: [aquamintsecurity.com](https://aquamintsecurity.com)
 - **Response Time**: Within 24 hours
 
-## Why Choose ElliotSop?
+## Why Choose Aqua Mint Security?
 
 - ✅ **Security First**: All applications built with security best practices
+- ✅ **Penetration Testing**: Comprehensive security validation
 - ✅ **Performance Focused**: 95+ Lighthouse scores, <2s load times
 - ✅ **Modern Stack**: Latest technologies and frameworks
-- ✅ **Full-Stack Expertise**: End-to-end development capabilities
+- ✅ **Security Expertise**: End-to-end security and development capabilities
 - ✅ **Fast Delivery**: 2-4 week typical project timelines
 - ✅ **100% Satisfaction**: Proven track record with 50+ happy clients
 
-Ready to build your next amazing app? [Get in touch](https://elliotsop.com/contact) for a free consultation.
+Ready to build your next secure application? [Get in touch](https://aquamintsecurity.com/contact) for a free security consultation.

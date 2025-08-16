@@ -4,14 +4,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 :root {
-  --bg-primary: #0B1220;
-  --bg-surface: #101826;
-  --text-primary: #E6EDF7;
-  --text-secondary: #9CA3AF;
-  --accent-cyan: #66E3FF;
-  --accent-emerald: #22C55E;
-  --accent-violet: #A78BFA;
-  --border-color: #1F2937;
+  --bg-primary: #F0FFFB;
+  --bg-surface: #E6FFFA;
+  --text-primary: #102A43;
+  --text-secondary: #475569;
+  --primary: #00B3A4;
+  --primary-hover: #0A9A8F;
+  --secondary: #7C3AED;
+  --secondary-hover: #6D28D9;
+  --info: #00C2FF;
+  --success: #10B981;
+  --warning: #F59E0B;
+  --danger: #EF4444;
+  --border-color: #D1FAE5;
+  --gradient: linear-gradient(135deg, #E6FFFA 0%, #EAF6FF 100%);
 }
 
 * {
@@ -43,12 +49,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--accent-cyan);
+  background: var(--primary);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #4DD0ED;
+  background: var(--primary-hover);
 }
 
 /* Code font class */
@@ -59,23 +65,23 @@ body {
 /* Grid pattern background */
 .grid-pattern {
   background-image: 
-    linear-gradient(rgba(102, 227, 255, 0.1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(102, 227, 255, 0.1) 1px, transparent 1px);
+    linear-gradient(rgba(0, 179, 164, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 179, 164, 0.1) 1px, transparent 1px);
   background-size: 50px 50px;
 }
 
 /* Glowing effects */
-.glow-cyan {
-  box-shadow: 0 0 20px rgba(102, 227, 255, 0.3);
+.glow-primary {
+  box-shadow: 0 0 20px rgba(0, 179, 164, 0.3);
 }
 
-.glow-emerald {
-  box-shadow: 0 0 20px rgba(34, 197, 94, 0.3);
+.glow-success {
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
 }
 
 /* Terminal-style elements */
 .terminal {
-  background: #0F172A;
+  background: #FFFFFF;
   border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 1rem;
@@ -85,7 +91,7 @@ body {
 
 .terminal::before {
   content: "$ ";
-  color: var(--accent-emerald);
+  color: var(--success);
 }
 
 /* Animation keyframes */
@@ -122,7 +128,7 @@ a:focus,
 button:focus,
 input:focus,
 textarea:focus {
-  outline: 2px solid var(--accent-cyan);
+  outline: 2px solid var(--primary);
   outline-offset: 2px;
 }
 
@@ -140,21 +146,25 @@ textarea:focus {
 
 /* Custom utility classes */
 .text-gradient {
-  background: linear-gradient(135deg, var(--accent-cyan), var(--accent-violet));
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
+.bg-gradient {
+  background: var(--gradient);
+}
+
 .border-gradient {
   border: 1px solid;
-  border-image: linear-gradient(135deg, var(--accent-cyan), var(--accent-violet)) 1;
+  border-image: linear-gradient(135deg, var(--primary), var(--secondary)) 1;
 }
 
 /* Button styles */
 .btn-primary {
-  background: linear-gradient(135deg, var(--accent-cyan), var(--accent-emerald));
-  color: var(--bg-primary);
+  background: var(--primary);
+  color: white;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
   font-weight: 600;
@@ -166,26 +176,27 @@ textarea:focus {
 }
 
 .btn-primary:hover {
+  background: var(--primary-hover);
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(102, 227, 255, 0.3);
+  box-shadow: 0 10px 25px rgba(0, 179, 164, 0.3);
 }
 
 .btn-secondary {
   background: transparent;
-  color: var(--accent-cyan);
+  color: var(--primary);
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
   font-weight: 600;
   text-decoration: none;
   display: inline-block;
-  border: 1px solid var(--accent-cyan);
+  border: 1px solid var(--primary);
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .btn-secondary:hover {
-  background: var(--accent-cyan);
-  color: var(--bg-primary);
+  background: var(--primary);
+  color: white;
   transform: translateY(-2px);
 }
 
@@ -199,8 +210,8 @@ textarea:focus {
 }
 
 .card:hover {
-  border-color: var(--accent-cyan);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  border-color: var(--primary);
+  box-shadow: 0 10px 40px rgba(0, 179, 164, 0.1);
   transform: translateY(-5px);
 }
 
@@ -215,7 +226,7 @@ nav a {
 
 nav a:hover,
 nav a.active {
-  color: var(--accent-cyan);
+  color: var(--primary);
 }
 
 nav a::after {
@@ -225,7 +236,7 @@ nav a::after {
   height: 2px;
   bottom: -4px;
   left: 0;
-  background: var(--accent-cyan);
+  background: var(--primary);
   transition: width 0.3s ease;
 }
 
@@ -238,7 +249,7 @@ nav a.active::after {
 input,
 textarea,
 select {
-  background: var(--bg-surface);
+  background: white;
   border: 1px solid var(--border-color);
   color: var(--text-primary);
   padding: 0.75rem;
@@ -250,8 +261,8 @@ select {
 input:focus,
 textarea:focus,
 select:focus {
-  border-color: var(--accent-cyan);
-  background: var(--bg-primary);
+  border-color: var(--primary);
+  background: white;
 }
 
 input::placeholder,
@@ -261,13 +272,13 @@ textarea::placeholder {
 
 /* Badge styles */
 .badge {
-  background: rgba(102, 227, 255, 0.1);
-  color: var(--accent-cyan);
+  background: rgba(0, 179, 164, 0.1);
+  color: var(--primary);
   padding: 0.25rem 0.75rem;
   border-radius: 20px;
   font-size: 0.875rem;
   font-weight: 500;
-  border: 1px solid rgba(102, 227, 255, 0.2);
+  border: 1px solid rgba(0, 179, 164, 0.2);
 }
 
 /* Section spacing */
@@ -285,6 +296,7 @@ textarea::placeholder {
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   font-weight: 700;
+  color: var(--text-primary);
 }
 
 h1 {
@@ -330,7 +342,7 @@ h3 {
   width: 20px;
   height: 20px;
   margin: -10px 0 0 -10px;
-  border: 2px solid var(--accent-cyan);
+  border: 2px solid var(--primary);
   border-top-color: transparent;
   border-radius: 50%;
   animation: spin 1s linear infinite;
@@ -344,7 +356,7 @@ h3 {
 
 /* Code blocks */
 pre {
-  background: #0F172A;
+  background: white;
   padding: 1rem;
   border-radius: 8px;
   overflow-x: auto;
@@ -354,7 +366,7 @@ pre {
 
 code {
   font-family: 'JetBrains Mono', monospace;
-  background: rgba(102, 227, 255, 0.1);
+  background: rgba(0, 179, 164, 0.1);
   padding: 0.125rem 0.25rem;
   border-radius: 4px;
   font-size: 0.875em;
@@ -364,3 +376,22 @@ pre code {
   background: none;
   padding: 0;
 }
+
+/* Color utility classes */
+.text-primary { color: var(--primary); }
+.text-secondary { color: var(--secondary); }
+.text-info { color: var(--info); }
+.text-success { color: var(--success); }
+.text-warning { color: var(--warning); }
+.text-danger { color: var(--danger); }
+
+.bg-primary { background-color: var(--primary); }
+.bg-secondary { background-color: var(--secondary); }
+.bg-info { background-color: var(--info); }
+.bg-success { background-color: var(--success); }
+.bg-warning { background-color: var(--warning); }
+.bg-danger { background-color: var(--danger); }
+
+/* Surface backgrounds */
+.bg-surface { background-color: var(--bg-surface); }
+.bg-card { background-color: white; }
