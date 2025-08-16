@@ -2,51 +2,36 @@ import { Shield, Award, Target, Users, Code, Lock, Zap } from 'lucide-react';
 
 const badges = [
   {
+    icon: Shield,
+    text: 'OSCP',
+    color: 'text-[var(--primary)]'
+  },
+  {
     icon: Code,
-    text: 'React Expert',
-    color: 'text-[#66E3FF]'
+    text: 'Front End Developer',
+    color: 'text-[var(--success)]'
   },
   {
     icon: Zap,
-    text: 'Next.js Specialist',
-    color: 'text-[#22C55E]'
-  },
-  {
-    icon: Users,
-    text: 'React Native',
-    color: 'text-[#A78BFA]'
-  },
-  {
-    icon: Target,
-    text: 'Node.js Pro',
-    color: 'text-[#66E3FF]'
-  },
-  {
-    icon: Shield,
-    text: 'Security First',
-    color: 'text-[#22C55E]'
-  },
-  {
-    icon: Award,
-    text: 'Docker Certified',
-    color: 'text-[#A78BFA]'
+    text: 'React',
+    color: 'text-[var(--secondary)]'
   },
 ];
 
 export function TrustBadges() {
   return (
     <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8">
-      <div className="text-gray-400 text-sm font-medium">Technologies I specialize in:</div>
+      <div className="text-[var(--text-secondary)] text-sm font-medium">Technology Certifications:</div>
       
       {badges.map((badge, index) => {
         const Icon = badge.icon;
         return (
           <div
             key={index}
-            className="flex items-center space-x-2 px-3 py-2 bg-[#101826] border border-gray-700 rounded-lg hover:border-gray-600 transition-colors duration-200"
+            className="flex items-center space-x-2 px-3 py-2 bg-white border border-[var(--border-color)] rounded-lg hover:border-[var(--primary)] transition-colors duration-200"
           >
             <Icon className={`h-4 w-4 ${badge.color}`} />
-            <span className="text-gray-300 text-sm font-medium whitespace-nowrap">
+            <span className="text-[var(--text-primary)] text-sm font-medium whitespace-nowrap">
               {badge.text}
             </span>
           </div>

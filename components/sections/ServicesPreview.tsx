@@ -6,40 +6,40 @@ const services = [
   {
     id: 'web-apps',
     icon: Globe,
-    title: 'Secure Web Applications',
-    description: 'Modern, secure web applications built with React, Next.js, and enterprise-grade security practices.',
-    features: ['Security-First Design', 'Real-time Features', 'Progressive Web Apps', 'Secure Authentication'],
-    accent: 'text-[#00B3A4] border-[#00B3A4]'
+    title: 'Website Development',
+    description: 'Modern, responsive websites built with React, Next.js, and the latest web technologies.',
+    features: ['Responsive Design', 'SEO Optimized', 'Fast Performance', 'Modern UI/UX'],
+    accent: 'text-[var(--primary)] border-[var(--primary)]'
   },
   {
     id: 'mobile-apps', 
     icon: Users,
-    title: 'Secure Mobile Apps',
-    description: 'Cross-platform mobile applications with built-in security controls and data protection.',
-    features: ['Secure Data Storage', 'Biometric Authentication', 'App Store Deployment', 'Encrypted Communications'],
-    accent: 'text-[#10B981] border-[#10B981]'
+    title: 'Mobile App Development',
+    description: 'Cross-platform mobile applications built with React Native for iOS and Android.',
+    features: ['Cross-Platform', 'Native Performance', 'App Store Ready', 'Push Notifications'],
+    accent: 'text-[var(--success)] border-[var(--success)]'
   },
   {
     id: 'backend-apis',
     icon: Server,
-    title: 'Secure Backend & APIs',
-    description: 'Hardened backend services and APIs with comprehensive security controls and monitoring.',
-    features: ['Secure API Design', 'Threat Detection', 'Cloud Security', 'Zero-Trust Architecture'],
-    accent: 'text-[#7C3AED] border-[#7C3AED]'
+    title: 'Penetration Testing',
+    description: 'Comprehensive security testing to identify vulnerabilities in web applications and networks.',
+    features: ['Web App Testing', 'Network Security', 'Vulnerability Assessment', 'Security Reports'],
+    accent: 'text-[var(--secondary)] border-[var(--secondary)]'
   },
 ];
 
 export function ServicesPreview() {
   return (
-    <section className="section bg-[#E6FFFA]">
+    <section className="section bg-[var(--bg-surface)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Security <span className="text-gradient">Services</span>
+            My <span className="text-gradient">Services</span>
           </h2>
-          <p className="text-xl text-[#475569] max-w-3xl mx-auto">
-            From concept to deployment, we build modern applications that are fast, secure, and scalable. 
-            Specializing in security-first development and comprehensive threat protection.
+          <p className="text-xl text-[var(--text-secondary)] max-w-3xl mx-auto">
+            From concept to deployment, I build modern applications that are fast, secure, and scalable. 
+            Specializing in full-stack development and penetration testing.
           </p>
         </div>
 
@@ -59,13 +59,13 @@ export function ServicesPreview() {
                   {service.title}
                 </h3>
                 
-                <p className="text-gray-400 mb-6 leading-relaxed">
+                <p className="text-[var(--text-secondary)] mb-6 leading-relaxed">
                   {service.description}
                 </p>
 
                 <ul className="space-y-2 mb-6">
                   {service.features.map((feature, index) => (
-                    <li key={index} className="flex items-center text-sm text-gray-300">
+                    <li key={index} className="flex items-center text-sm text-[var(--text-secondary)]">
                       <ArrowRight className={`h-4 w-4 mr-2 ${service.accent.split(' ')[0]}`} />
                       {feature}
                     </li>

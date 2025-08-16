@@ -6,28 +6,28 @@ const stats = [
     value: '95-100',
     label: 'Lighthouse Score',
     description: 'Performance-optimized applications',
-    color: 'text-[#00B3A4]'
+    color: 'text-[var(--primary)]'
   },
   {
     icon: Clock,
     value: '<2s',
     label: 'Load Time',
     description: 'Lightning-fast user experiences',
-    color: 'text-[#10B981]'
+    color: 'text-[var(--success)]'
   },
   {
     icon: Shield,
     value: '100%',
-    label: 'Security Coverage',
-    description: 'Secure by design, validated by testing',
-    color: 'text-[#7C3AED]'
+    label: 'Code Quality',
+    description: 'Clean, maintainable code',
+    color: 'text-[var(--secondary)]'
   },
   {
     icon: FileText,
     value: '2-4 weeks',
     label: 'Delivery Time',
     description: 'Fast development cycles',
-    color: 'text-[#00B3A4]'
+    color: 'text-[var(--primary)]'
   },
 ];
 
@@ -39,7 +39,7 @@ export function StatsSection() {
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Performance <span className="text-gradient">Metrics</span>
           </h2>
-          <p className="text-xl text-[#475569] max-w-3xl mx-auto">
+          <p className="text-xl text-[var(--text-secondary)] max-w-3xl mx-auto">
             Every application I build meets high standards for performance, security, and user experience.
           </p>
         </div>
@@ -52,7 +52,7 @@ export function StatsSection() {
                 key={index}
                 className="text-center group hover:scale-105 transition-transform duration-300"
               >
-                <div className={`inline-flex p-4 rounded-full bg-white border border-[#D1FAE5] mb-4 group-hover:border-opacity-100 transition-colors duration-300`}>
+                <div className={`inline-flex p-4 rounded-full bg-white border border-[var(--border-color)] mb-4 group-hover:border-opacity-100 transition-colors duration-300`}>
                   <Icon className={`h-8 w-8 ${stat.color}`} />
                 </div>
                 
@@ -60,11 +60,11 @@ export function StatsSection() {
                   {stat.value}
                 </div>
                 
-                <div className="text-xl font-semibold text-white mb-2">
+                <div className="text-xl font-semibold text-[var(--text-primary)] mb-2">
                   {stat.label}
                 </div>
                 
-                <p className="text-[#475569] text-sm max-w-xs mx-auto">
+                <p className="text-[var(--text-secondary)] text-sm max-w-xs mx-auto">
                   {stat.description}
                 </p>
               </div>
@@ -75,17 +75,17 @@ export function StatsSection() {
         {/* Additional Metrics */}
         <div className="mt-16 text-center">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="p-6 bg-white rounded-lg border border-[#D1FAE5]">
-              <div className="text-2xl font-bold text-[#10B981] mb-2">50+</div>
-              <div className="text-[#475569]">Apps Delivered</div>
+            <div className="p-6 bg-white rounded-lg border border-[var(--border-color)]">
+              <div className="text-2xl font-bold text-[var(--success)] mb-2">50+</div>
+              <div className="text-[var(--text-secondary)]">Apps Delivered</div>
             </div>
-            <div className="p-6 bg-white rounded-lg border border-[#D1FAE5]">
-              <div className="text-2xl font-bold text-[#00B3A4] mb-2">100%</div>
-              <div className="text-[#475569]">Client Satisfaction</div>
+            <div className="p-6 bg-white rounded-lg border border-[var(--border-color)]">
+              <div className="text-2xl font-bold text-[var(--primary)] mb-2">100%</div>
+              <div className="text-[var(--text-secondary)]">Client Satisfaction</div>
             </div>
-            <div className="p-6 bg-white rounded-lg border border-[#D1FAE5]">
-              <div className="text-2xl font-bold text-[#7C3AED] mb-2">24/7</div>
-              <div className="text-[#475569]">Deployment Uptime</div>
+            <div className="p-6 bg-white rounded-lg border border-[var(--border-color)]">
+              <div className="text-2xl font-bold text-[var(--secondary)] mb-2">24/7</div>
+              <div className="text-[var(--text-secondary)]">Deployment Uptime</div>
             </div>
           </div>
         </div>

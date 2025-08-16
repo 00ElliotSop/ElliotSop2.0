@@ -13,26 +13,26 @@ export function HeroSection() {
       
       {/* Floating Elements */}
       <div className="absolute top-20 left-10 animate-float">
-        <Shield className="h-8 w-8 text-[#00B3A4] opacity-60" />
+        <Shield className="h-8 w-8 text-[var(--primary)] opacity-60" />
       </div>
       <div className="absolute top-40 right-20 animate-float" style={{animationDelay: '1s'}}>
-        <Target className="h-6 w-6 text-[#10B981] opacity-60" />
+        <Target className="h-6 w-6 text-[var(--success)] opacity-60" />
       </div>
       <div className="absolute bottom-40 left-20 animate-float" style={{animationDelay: '2s'}}>
-        <Code className="h-10 w-10 text-[#7C3AED] opacity-60" />
+        <Code className="h-10 w-10 text-[var(--secondary)] opacity-60" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Main Content */}
         <div className="animate-fadeInUp">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Secure development.<br />
-            <span className="text-gradient">Clean by design.</span>
+            Build amazing apps.<br />
+            <span className="text-gradient">Fast & secure.</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-[#475569] max-w-4xl mx-auto mb-8 leading-relaxed">
-            Welcome to Aqua Mint Security—where modern development meets robust security. 
-            We create fast, scalable applications with enterprise-grade security built-in from day one.
+          <p className="text-xl md:text-2xl text-[var(--text-secondary)] max-w-4xl mx-auto mb-8 leading-relaxed">
+            Full-stack developer specializing in React, Next.js, and Node.js. 
+            I build modern web and mobile applications that are fast, secure, and user-friendly.
           </p>
 
           {/* CTA Buttons */}
@@ -53,29 +53,29 @@ export function HeroSection() {
 
         {/* Terminal Window */}
         <div className="mt-16 max-w-2xl mx-auto animate-fadeInUp" style={{animationDelay: '0.6s'}}>
-          <div className="bg-white border border-[#D1FAE5] rounded-lg overflow-hidden shadow-lg">
-            <div className="flex items-center justify-between px-4 py-2 bg-[#E6FFFA] border-b border-[#D1FAE5]">
+          <div className="bg-white border border-[var(--border-color)] rounded-lg overflow-hidden shadow-lg">
+            <div className="flex items-center justify-between px-4 py-2 bg-[var(--bg-surface)] border-b border-[var(--border-color)]">
               <div className="flex space-x-2">
-                <div className="w-3 h-3 rounded-full bg-[#EF4444]"></div>
-                <div className="w-3 h-3 rounded-full bg-[#F59E0B]"></div>
-                <div className="w-3 h-3 rounded-full bg-[#10B981]"></div>
+                <div className="w-3 h-3 rounded-full bg-[var(--danger)]"></div>
+                <div className="w-3 h-3 rounded-full bg-[var(--warning)]"></div>
+                <div className="w-3 h-3 rounded-full bg-[var(--success)]"></div>
               </div>
-              <div className="text-[#475569] text-sm font-mono">security-audit.sh</div>
+              <div className="text-[var(--text-secondary)] text-sm font-mono">npm-run-build.sh</div>
             </div>
             <div className="p-4 font-mono text-sm">
-              <div className="text-[#10B981]">$ npm run build</div>
-              <div className="text-[#475569] mt-2">
+              <div className="text-[var(--success)]">$ npm run build</div>
+              <div className="text-[var(--text-secondary)] mt-2">
                 <div className="flex items-center">
-                  <Zap className="w-4 h-4 mr-2 text-[#00B3A4]" />
+                  <Zap className="w-4 h-4 mr-2 text-[var(--primary)]" />
                   Building optimized production bundle...
                 </div>
                 <div className="flex items-center mt-1">
-                  <Activity className="w-4 h-4 mr-2 text-[#7C3AED]" />
+                  <Activity className="w-4 h-4 mr-2 text-[var(--secondary)]" />
                   Running performance optimizations...
                 </div>
                 <div className="flex items-center mt-1">
-                  <Lock className="w-4 h-4 mr-2 text-[#10B981]" />
-                  <span className="text-[#10B981]">✓ Build completed successfully</span>
+                  <Lock className="w-4 h-4 mr-2 text-[var(--success)]" />
+                  <span className="text-[var(--success)]">✓ Build completed successfully</span>
                 </div>
               </div>
             </div>

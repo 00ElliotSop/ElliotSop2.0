@@ -1,23 +1,23 @@
-# Aqua Mint Security - Secure Web & Mobile App Development
+# ElliotSop - Full-Stack Developer & Penetration Tester
 
-Expert security-focused development team specializing in secure web applications and mobile apps. We build fast, scalable solutions with enterprise-grade security built-in from day one.
+Full-stack developer specializing in React, Next.js, and Node.js. I build modern web and mobile applications that are fast, secure, and user-friendly, with additional expertise in penetration testing.
 
 ## Features
 
-- **Secure Web Applications**: Modern React/Next.js applications with security-first design
-- **Secure Mobile Applications**: Cross-platform React Native apps with built-in security controls
-- **Secure Backend & APIs**: Hardened backend services with comprehensive security monitoring
+- **Website Development**: Modern React/Next.js applications with responsive design
+- **Mobile App Development**: Cross-platform React Native apps for iOS and Android
+- **Backend Development**: Node.js APIs and server-side applications
 - **Penetration Testing**: Comprehensive security assessments and vulnerability testing
-- **Security Consulting**: Expert guidance on secure development practices
+- **Full-Stack Solutions**: End-to-end application development
 
 ## Tech Stack
 
-- **Frontend**: React, Next.js, TypeScript, Tailwind CSS (Security-hardened)
-- **Mobile**: React Native, Native iOS/Android (Secure by design)
-- **Backend**: Node.js, Express, Fastify, NestJS (Zero-trust architecture)
+- **Frontend**: React, Next.js, TypeScript, Tailwind CSS
+- **Mobile**: React Native, Native iOS/Android
+- **Backend**: Node.js, Express, Fastify, NestJS
 - **Database**: PostgreSQL, MongoDB, Redis
 - **Cloud**: AWS, Vercel, Docker
-- **Security**: OAuth2, JWT, Rate Limiting, OWASP Best Practices, Penetration Testing, Threat Modeling
+- **Security**: Penetration Testing, OSCP Certified, OAuth2, JWT, Security Best Practices
 
 ## Getting Started
 
@@ -67,44 +67,45 @@ This configuration enables:
 
 ## Services
 
-### Secure Web Development
-- Security-first web applications
-- Real-time features with secure communications
-- E-commerce with PCI DSS compliance
-- Performance optimization with security controls
+### Website Development
+- Modern, responsive web applications
+- Real-time features and interactive UIs
+- E-commerce and business applications
+- Performance optimization and SEO
 
-### Secure Mobile Development
-- Cross-platform React Native applications with security controls
-- Native iOS and Android development with data protection
-- Secure app store deployment and code obfuscation
-- Encrypted push notifications and secure offline storage
+### Mobile App Development
+- Cross-platform React Native applications
+- Native iOS and Android development
+- App store deployment and optimization
+- Push notifications and offline storage
 
-### Secure Backend Development
-- Hardened RESTful and GraphQL APIs
-- Zero-trust microservices architecture
-- Secure database design with encryption
-- Cloud security and DevSecOps
+### Backend Development
+- RESTful and GraphQL APIs
+- Microservices architecture
+- Database design and optimization
+- Cloud deployment and DevOps
 
 ### Penetration Testing
 - Web application security testing
-- Mobile application security assessment
-- API security testing
 - Network penetration testing
-- Social engineering assessments
+- API security testing
+- Vulnerability assessments
+- Security reporting and remediation
 ## Contact
 
-- **Email**: hello@aquamintsecurity.com
-- **Website**: [aquamintsecurity.com](https://aquamintsecurity.com)
+- **Email**: hello@elliotsop.com
+- **Website**: [elliotsop.com](https://elliotsop.com)
 - **Response Time**: Within 24 hours
 
-## Why Choose Aqua Mint Security?
+## Why Choose ElliotSop?
 
-- ✅ **Security First**: All applications built with security best practices
+- ✅ **Full-Stack Expertise**: End-to-end development capabilities
 - ✅ **Penetration Testing**: Comprehensive security validation
+- ✅ **OSCP Certified**: Professional security testing credentials
 - ✅ **Performance Focused**: 95+ Lighthouse scores, <2s load times
 - ✅ **Modern Stack**: Latest technologies and frameworks
 - ✅ **Security Expertise**: End-to-end security and development capabilities
 - ✅ **Fast Delivery**: 2-4 week typical project timelines
 - ✅ **100% Satisfaction**: Proven track record with 50+ happy clients
 
-Ready to build your next secure application? [Get in touch](https://aquamintsecurity.com/contact) for a free security consultation.
+Ready to build your next application? [Get in touch](https://elliotsop.com/contact) for a free consultation.

@@ -10,7 +10,6 @@ const navItems = [
   { href: '/', label: 'Home' },
   { href: '/services', label: 'Services' },
   { href: '/portfolio', label: 'Portfolio' },
-  { href: '/pricing', label: 'Pricing' },
   { href: '/blog', label: 'Blog' },
   { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' }
@@ -43,10 +42,9 @@ export function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 text-xl font-bold">
             <div className="relative">
-              <Shield className="h-8 w-8 text-[#00B3A4]" />
-              <Droplets className="h-4 w-4 text-[#10B981] absolute -bottom-1 -right-1" />
+              <Shield className="h-8 w-8 text-[var(--primary)]" />
             </div>
-            <span className="text-gradient">Aqua Mint Security</span>
+            <span className="text-gradient">ElliotSop</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -57,13 +55,13 @@ export function Navigation() {
                 href={item.href}
                 className={`text-sm font-medium transition-colors duration-200 relative ${
                   pathname === item.href
-                    ? 'text-[#00B3A4]'
-                    : 'text-[#475569] hover:text-[#00B3A4]'
+                    ? 'text-[var(--primary)]'
+                    : 'text-[var(--text-secondary)] hover:text-[var(--primary)]'
                 }`}
               >
                 {item.label}
                 {pathname === item.href && (
-                  <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-[#00B3A4]" />
+                  <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-[var(--primary)]" />
                 )}
               </Link>
             ))}
@@ -80,7 +78,7 @@ export function Navigation() {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="text-[#475569] hover:text-[#00B3A4] focus:outline-none focus:text-[#00B3A4] transition-colors duration-200"
+              className="text-[var(--text-secondary)] hover:text-[var(--primary)] focus:outline-none focus:text-[var(--primary)] transition-colors duration-200"
               aria-label="Toggle menu"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -90,7 +88,7 @@ export function Navigation() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden bg-white border-t border-[#D1FAE5]">
+          <div className="md:hidden bg-white border-t border-[var(--border-color)]">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navItems.map((item) => (
                 <Link
@@ -99,8 +97,8 @@ export function Navigation() {
                   onClick={() => setIsOpen(false)}
                   className={`block px-3 py-2 text-sm font-medium transition-colors duration-200 ${
                     pathname === item.href
-                      ? 'text-[#00B3A4] bg-[#00B3A4]/10'
-                      : 'text-[#475569] hover:text-[#00B3A4] hover:bg-[#E6FFFA]'
+                      ? 'text-[var(--primary)] bg-[var(--primary)]/10'
+                      : 'text-[var(--text-secondary)] hover:text-[var(--primary)] hover:bg-[var(--bg-surface)]'
                   }`}
                 >
                   {item.label}

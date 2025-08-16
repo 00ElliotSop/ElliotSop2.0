@@ -12,31 +12,31 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Aqua Mint Security - Secure Web & Mobile App Development',
-  description: 'Expert security-focused development team specializing in secure web applications and mobile apps. We build fast, scalable solutions with enterprise-grade security built-in from day one.',
-  keywords: 'secure web development, mobile app security, penetration testing, security consulting, React, Next.js, Node.js, secure applications, cybersecurity',
-  authors: [{ name: 'Aqua Mint Security' }],
-  creator: 'Aqua Mint Security',
-  metadataBase: new URL('https://aquamintsecurity.com'),
+  title: 'ElliotSop - Full-Stack Developer & Penetration Tester',
+  description: 'Full-stack developer specializing in React, Next.js, and Node.js. I build modern web and mobile applications with security testing expertise.',
+  keywords: 'full-stack developer, React developer, Next.js, Node.js, penetration testing, web development, mobile apps, OSCP',
+  authors: [{ name: 'ElliotSop' }],
+  creator: 'ElliotSop',
+  metadataBase: new URL('https://elliotsop.com'),
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://aquamintsecurity.com',
-    title: 'Aqua Mint Security - Secure Web & Mobile App Development',
-    description: 'Build fast, secure web and mobile applications with enterprise-grade security.',
-    siteName: 'Aqua Mint Security',
+    url: 'https://elliotsop.com',
+    title: 'ElliotSop - Full-Stack Developer & Penetration Tester',
+    description: 'Build fast, secure web and mobile applications with modern technologies.',
+    siteName: 'ElliotSop',
     images: [{
       url: '/og-image.jpg',
       width: 1200,
       height: 630,
-      alt: 'Aqua Mint Security - Secure Development Experts'
+      alt: 'ElliotSop - Full-Stack Developer'
     }]
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Aqua Mint Security - Secure Web & Mobile App Development',
-    description: 'Build fast, secure web and mobile applications with enterprise-grade security.',
-    creator: '@aquamintsecurity',
+    title: 'ElliotSop - Full-Stack Developer & Penetration Tester',
+    description: 'Build fast, secure web and mobile applications with modern technologies.',
+    creator: '@elliotsop',
     images: ['/og-image.jpg']
   },
   robots: {
@@ -69,49 +69,48 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": ["Person", "Organization"],
-              "name": "Aqua Mint Security",
-              "alternateName": "Aqua Mint",
-              "description": "Expert security-focused development team specializing in secure web applications and mobile app development",
-              "url": "https://aquamintsecurity.com",
+              "name": "ElliotSop",
+              "alternateName": "Elliot",
+              "description": "Full-stack developer specializing in React, Next.js, Node.js, and penetration testing",
+              "url": "https://elliotsop.com",
               "sameAs": [
-                "https://linkedin.com/company/aquamintsecurity",
-                "https://github.com/aquamintsecurity",
-                "https://twitter.com/aquamintsecurity"
+                "https://linkedin.com/in/elliotsop",
+                "https://github.com/elliotsop",
+                "https://twitter.com/elliotsop"
               ],
               "knowsAbout": [
-                "Secure Web Development",
-                "Secure Mobile App Development",
+                "Web Development",
+                "Mobile App Development",
                 "Penetration Testing",
-                "Security Consulting",
-                "Cybersecurity",
+                "Full-Stack Development",
                 "React",
                 "Next.js",
                 "Node.js",
-                "Secure API Development",
-                "Application Security"
+                "API Development",
+                "OSCP"
               ],
               "hasCredential": [
                 {
                   "@type": "EducationalOccupationalCredential",
-                  "name": "Cybersecurity Certification",
+                  "name": "OSCP Certification",
                   "credentialCategory": "Professional Certification"
                 }
               ],
               "offers": [
                 {
                   "@type": "Service",
-                  "serviceType": "Secure Website Development",
-                  "description": "Modern, secure web applications built with React, Next.js, and enterprise-grade security practices"
+                  "serviceType": "Website Development",
+                  "description": "Modern, responsive web applications built with React, Next.js, and modern web technologies"
                 },
                 {
                   "@type": "Service", 
-                  "serviceType": "Secure Mobile App Development",
-                  "description": "Cross-platform mobile applications with built-in security controls and data protection"
+                  "serviceType": "Mobile App Development",
+                  "description": "Cross-platform mobile applications built with React Native for iOS and Android"
                 },
                 {
                   "@type": "Service",
                   "serviceType": "Penetration Testing",
-                  "description": "Comprehensive security testing and vulnerability assessments for web and mobile applications"
+                  "description": "Comprehensive security testing to identify vulnerabilities in web applications and networks"
                 }
               ],
               "address": {
@@ -122,13 +121,13 @@ export default function RootLayout({
               "contactPoint": {
                 "@type": "ContactPoint",
                 "contactType": "Business",
-                "email": "hello@aquamintsecurity.com"
+                "email": "hello@elliotsop.com"
               }
             })
           }}
         />
       </head>
-      <body className="bg-[#F0FFFB] text-[#102A43] font-sans antialiased">
+      <body className="bg-[var(--bg-primary)] text-[var(--text-primary)] font-sans antialiased">
         <Navigation />
         <main className="min-h-screen">
           {children}
