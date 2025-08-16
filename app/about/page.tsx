@@ -72,7 +72,7 @@ export default function AboutPage() {
               <div className="card text-center">
                 <Zap className="h-12 w-12 text-[var(--info)] mx-auto mb-4" />
                 <h3 className="font-bold text-[var(--text-primary)] mb-2">Performance</h3>
-                <p className="text-sm text-[var(--text-secondary)]">95+ Lighthouse, <2s Load Times</p>
+                <p className="text-sm text-[var(--text-secondary)]">95+ Lighthouse, &lt;2s Load Times</p>
               </div>
             </div>
           </div>
@@ -158,6 +158,5 @@ export default function AboutPage() {
         </div>
       </section>
     </div>
-  )
   );
 }
