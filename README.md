@@ -34,9 +34,9 @@ npm run build
 npm start
 ```
 
-## Vite Configuration
+## Vite Configuration (Alternative Setup)
 
-For projects using Vite, use this minimal configuration with preview.allowedHosts:
+If you prefer to use Vite instead of Next.js, replace the contents of `vite.config.ts` with this minimal configuration that includes preview.allowedHosts:
 
 ```javascript
 import { defineConfig } from 'vite';
@@ -57,6 +57,12 @@ export default defineConfig({
  },
 });
 ```
+
+This configuration enables:
+- React plugin support
+- Host and CORS settings for development server
+- Preview server configuration with allowed hosts
+- Proper setup for deployment and local development
 
 ## Services
 
