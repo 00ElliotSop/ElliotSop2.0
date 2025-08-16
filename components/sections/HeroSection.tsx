@@ -1,83 +1,77 @@
-'use client';
-
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { Shield, Target, Code, Activity, Zap, Lock, Droplets } from 'lucide-react';
-import { TrustBadges } from '@/components/TrustBadges';
-
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient pt-20">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 grid-pattern opacity-20"></div>
-      
-      {/* Floating Elements */}
-      <div className="absolute top-20 left-10 animate-float">
-        <Shield className="h-8 w-8 text-[var(--primary)] opacity-60" />
-      </div>
-      <div className="absolute top-40 right-20 animate-float" style={{animationDelay: '1s'}}>
-        <Target className="h-6 w-6 text-[var(--success)] opacity-60" />
-      </div>
-      <div className="absolute bottom-40 left-20 animate-float" style={{animationDelay: '2s'}}>
-        <Code className="h-10 w-10 text-[var(--secondary)] opacity-60" />
+    <section className="relative min-h-screen flex items-center justify-start overflow-hidden pt-20">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img
+          src="https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
+          alt="Technology background"
+          className="w-full h-full object-cover opacity-20"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[var(--bg-primary)]/90 to-[var(--bg-primary)]/60"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        {/* Main Content */}
-        <div className="animate-fadeInUp">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Build amazing apps.<br />
-            <span className="text-gradient">Fast & secure.</span>
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="max-w-3xl">
+          {/* Main Heading */}
+          <h1 className="text-4xl md:text-6xl font-bold mb-8 leading-tight text-[var(--text-primary)]">
+            For those who need
+            <br />
+            <span className="text-gradient">secure solutions</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-[var(--text-secondary)] max-w-4xl mx-auto mb-8 leading-relaxed">
-            Full-stack developer specializing in React, Next.js, and Node.js. 
-            I build modern web and mobile applications that are fast, secure, and user-friendly.
+          {/* Service Tags */}
+          <div className="flex flex-wrap gap-4 mb-12">
+            <div className="px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full border border-[var(--border-color)] text-[var(--text-primary)] font-medium text-sm">
+              Web Application Development
+            </div>
+            <div className="px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full border border-[var(--border-color)] text-[var(--text-primary)] font-medium text-sm">
+              Mobile App Development
+            </div>
+            <div className="px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full border border-[var(--border-color)] text-[var(--text-primary)] font-medium text-sm">
+              Penetration Testing
+            </div>
+            <div className="px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full border border-[var(--border-color)] text-[var(--text-primary)] font-medium text-sm">
+              Security Consulting
+            </div>
+            <div className="px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full border border-[var(--border-color)] text-[var(--text-primary)] font-medium text-sm">
+              Full-Stack Development
+            </div>
+          </div>
+
+          {/* Description */}
+          <p className="text-lg md:text-xl text-[var(--text-secondary)] max-w-2xl mb-8 leading-relaxed">
+            Full-stack developer and penetration tester specializing in React, Next.js, and Node.js. 
+            Building secure, modern applications with comprehensive security testing.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button asChild size="lg" className="btn-primary text-lg px-8 py-4">
-              <Link href="/contact">Start Your Project</Link>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="btn-secondary text-lg px-8 py-4">
-              <Link href="/portfolio">View Portfolio</Link>
-            </Button>
+          <div className="flex flex-col sm:flex-row gap-4 mb-12">
+            <button className="btn-primary text-base px-6 py-3">
+              Start Your Project
+            </button>
+            <button className="btn-secondary text-base px-6 py-3">
+              View Portfolio
+            </button>
           </div>
-        </div>
 
-        {/* Trust Row */}
-        <div className="animate-fadeInUp" style={{animationDelay: '0.3s'}}>
-          <TrustBadges />
-        </div>
-
-        {/* Terminal Window */}
-        <div className="mt-16 max-w-2xl mx-auto animate-fadeInUp" style={{animationDelay: '0.6s'}}>
-          <div className="bg-white border border-[var(--border-color)] rounded-lg overflow-hidden shadow-lg">
-            <div className="flex items-center justify-between px-4 py-2 bg-[var(--bg-surface)] border-b border-[var(--border-color)]">
-              <div className="flex space-x-2">
-                <div className="w-3 h-3 rounded-full bg-[var(--danger)]"></div>
-                <div className="w-3 h-3 rounded-full bg-[var(--warning)]"></div>
-                <div className="w-3 h-3 rounded-full bg-[var(--success)]"></div>
-              </div>
-              <div className="text-[var(--text-secondary)] text-sm font-mono">npm-run-build.sh</div>
+          {/* Trust Indicators */}
+          <div className="flex flex-wrap items-center gap-6">
+            <div className="text-[var(--text-secondary)] text-sm font-medium">Certifications:</div>
+            
+            <div className="flex items-center space-x-2 px-3 py-2 bg-white/80 backdrop-blur-sm rounded-lg border border-[var(--border-color)]">
+              <div className="w-2 h-2 bg-[var(--primary)] rounded-full"></div>
+              <span className="text-[var(--text-primary)] text-sm font-medium">OSCP</span>
             </div>
-            <div className="p-4 font-mono text-sm">
-              <div className="text-[var(--success)]">$ npm run build</div>
-              <div className="text-[var(--text-secondary)] mt-2">
-                <div className="flex items-center">
-                  <Zap className="w-4 h-4 mr-2 text-[var(--primary)]" />
-                  Building optimized production bundle...
-                </div>
-                <div className="flex items-center mt-1">
-                  <Activity className="w-4 h-4 mr-2 text-[var(--secondary)]" />
-                  Running performance optimizations...
-                </div>
-                <div className="flex items-center mt-1">
-                  <Lock className="w-4 h-4 mr-2 text-[var(--success)]" />
-                  <span className="text-[var(--success)]">✓ Build completed successfully</span>
-                </div>
-              </div>
+            
+            <div className="flex items-center space-x-2 px-3 py-2 bg-white/80 backdrop-blur-sm rounded-lg border border-[var(--border-color)]">
+              <div className="w-2 h-2 bg-[var(--success)] rounded-full"></div>
+              <span className="text-[var(--text-primary)] text-sm font-medium">Front End Developer</span>
+            </div>
+            
+            <div className="flex items-center space-x-2 px-3 py-2 bg-white/80 backdrop-blur-sm rounded-lg border border-[var(--border-color)]">
+              <div className="w-2 h-2 bg-[var(--secondary)] rounded-full"></div>
+              <span className="text-[var(--text-primary)] text-sm font-medium">React</span>
             </div>
           </div>
         </div>
