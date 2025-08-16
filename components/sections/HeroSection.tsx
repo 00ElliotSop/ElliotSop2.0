@@ -7,7 +7,7 @@ import { TrustBadges } from '@/components/TrustBadges';
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient pt-20">
       {/* Background Pattern */}
       <div className="absolute inset-0 grid-pattern opacity-20"></div>
       
