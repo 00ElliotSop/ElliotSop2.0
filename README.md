@@ -93,7 +93,7 @@ This configuration enables:
 - Security reporting and remediation
 ## Contact
 
-- **Email**: hello@elliotsop.com
+- **Email**: contact@elliotsop.com
 - **Website**: [elliotsop.com](https://elliotsop.com)
 - **Response Time**: Within 24 hours
 
